@@ -1,6 +1,7 @@
 body{
     background-color: #0E1323;
     font-family: Rubik;
+    color: #BBC0FF;
 }
 .bg-custom{
     background-color: #5747EA;
@@ -8,7 +9,7 @@ body{
 .main-grid{
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(2, 30%);
+    grid-template-rows: repeat(2, 50%);
     gap: 10px;
 }
 .main-card{
@@ -18,10 +19,6 @@ body{
 
 .bg-card-text {
     background-color: #1C204B;
-}
-.text-custom-color
-{
-    color: #BBC0FF;
 }
 .container-spacing{
 max-width: 85% !important;
