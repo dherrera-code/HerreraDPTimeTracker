@@ -17,7 +17,7 @@
 
 <body>
 
-  <main class="main-grid container container-spacing">
+  <main class="main-grid container container-spacing" style="z-index: 0;">
 
     <article class="main-card rounded d-flex">
       <div class="card h-100 bg-card-text rounded">
@@ -52,18 +52,18 @@
     </article>
 
     <article class="work-card position-relative">
-      <div class="container">
-      <div class="row" style="height: 65px;" >
-        <div class="col bg-work rounded" style="z-index: -2;">
-          <img src="./images/icon-work.svg" class="position-absolute" style="right: 0; z-index: -1;" alt="Work card">
+      <div class="container position-absolute">
+      <div class="row" style="height: 80px;" >
+        <div class="col bg-work" style="z-index: -2; border-radius: 15px;">
+          <img src="./images/icon-work.svg" class="position-absolute" style="right: 15px; bottom: 10px; z-index: -1;" alt="Work card">
           </div>
         </div>
       </div>
-      <div class=" rounded container h-100 bottom-0 end-0">
-        <div class="row bg-card-text rounded-lg">
+      <div class="position-absolute rounded-lg container" style="bottom: 80px;">
+        <div class="row bg-card-text" style="border-radius: 15px;">
           <div class="col">
-            <div class=" container d-flex flex-row justify-content-between">
-              <h2 class="text-white pt-4">Work</h2>
+            <div class=" container d-flex flex-row justify-content-between align-items-center">
+              <h5 class="text-white pt-4">Work</h2>
               <img class="object-fit-contain" src="./images/icon-ellipsis.svg" alt="Three dots for more info!">
             </div>
           </div>
