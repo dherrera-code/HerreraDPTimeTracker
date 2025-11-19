@@ -19,7 +19,7 @@
 
   <main class="main-grid container container-spacing">
 
-    <article class="main-card rounded h-100 d-flex">
+    <article class="main-card rounded d-flex">
       <div class="card h-100 bg-card-text rounded">
 
         <div class="bg-custom container pb-5 card-body rounded">
@@ -52,25 +52,26 @@
     </article>
 
     <article class="work-card position-relative">
-      <div class="row" style="height: 80px;">
-        <div class="col bg-work rounded">
-          <img src="./images/icon-work.svg" class="position-absolute" style="right: 0;" alt="Work card">
-
+      <div class="container">
+      <div class="row" style="height: 65px;" >
+        <div class="col bg-work rounded" style="z-index: -2;">
+          <img src="./images/icon-work.svg" class="position-absolute" style="right: 0; z-index: -1;" alt="Work card">
+          </div>
         </div>
       </div>
-      <div class="bg-card-text rounded container position-absolute" style="z-index: 1;">
-        <div class="row d-flex ">
+      <div class=" rounded container h-100 bottom-0 end-0">
+        <div class="row bg-card-text rounded-lg">
           <div class="col">
-            <div class="bg-card-text rounded container d-flex flex-row justify-content-between">
-              <h2 class="text-white ">Work</h2>
+            <div class=" container d-flex flex-row justify-content-between">
+              <h2 class="text-white pt-4">Work</h2>
               <img class="object-fit-contain" src="./images/icon-ellipsis.svg" alt="Three dots for more info!">
             </div>
           </div>
             <div class="row">
-              <h1 style="font-size: 56px;" class="text-white">32hrs</h1>
+              <h1 style="font-size: 56px;" class="text-white ps-4">32hrs</h1>
             </div>
             <div class="row">
-              <p class="text-custom-color">Last week - 36hrs</p>
+              <p class="text-custom-color ps-4">Last week - 36hrs</p>
             </div>
           </div>
       </div>
