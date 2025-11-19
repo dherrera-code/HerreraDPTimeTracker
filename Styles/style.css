@@ -10,7 +10,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(2, 50%);
-    gap: 10px;
+    gap: 25px;
 }
 .main-card{
     grid-row-start: 1;
@@ -23,4 +23,8 @@ body{
 .container-spacing{
 max-width: 85% !important;
 margin-top: 200px;
+}
+/* classes for all custom card colors */
+.bg-work{
+    background-color: #FF8B64;
 }
