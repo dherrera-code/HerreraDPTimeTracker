@@ -30,9 +30,9 @@
 
         <div class="bg-custom card-body ps-4">
           <img src="./images/image-jeremy.png" class="py-4 mb-3 img-fluid" alt="Image of Jeremy Robson"
-            style="width: 100px;">
+            style="width: 78px;">
           <p class="text-white mb-0" style="font-size: 15px;">Report for</p>
-          <h1 class=" text-white pb-5" style="font-size: 40px; font-weight: 1;">Jeremy Robson</h5>
+          <h1 class=" text-white pb-4" style="font-size: 40px; font-weight: 1;">Jeremy Robson</h5>
         </div>
 
         <div class="card-body">
@@ -52,9 +52,9 @@
 
     </article>
 
-    <article class="work-card position-relative">
+    <article id="work-card" class="position-relative">
       <div class="container position-absolute">
-        <div class="row" style="height: 80px;">
+        <div class="row" style="height: 90px;">
           <div class="col bg-work" style="z-index: -2; border-radius: 15px;">
             <img src="./images/icon-work.svg" class="position-absolute" style="right: 15px; bottom: 10px; z-index: -1;"
               alt="Work card">
@@ -65,9 +65,40 @@
         <div class="row bg-card-text card-hover" style="border-radius: 15px;">
           <div class="col">
             <div class="container d-flex flex-row justify-content-between align-items-center">
-              <h5 id="" class="text-white pt-4 pb-2" style="font-weight: light;">Work</h2>
+              <h5 id="" class="text-white pt-4 pb-2" style="font-size: 14px; font-weight: light;">Work</h5>
                 <img class="object-fit-contain icon-color" src="./images/icon-ellipsis.svg"
-                  alt="Three dots for more info!">
+                  alt="Three dots to drop down more options!">
+            </div>
+          </div>
+          <div class="row d-flex align-items-center pb-4">
+            <!-- font size for time is changed to 32px.  -->
+            <div class="col p-0">
+              <h1 id="" style="font-weight: 1;" class=" current-hour-text text-white ps-sm-4 pb-1 pt-1">32hrs</h1>
+            </div>
+            <div class="col p-0">
+              <p id="" class="text-custom-color">Last week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="play-card" class=" position-relative">
+      <div class="container position-absolute">
+        <div class="row" style="height: 80px;">
+          <div class="col bg-play" style="z-index: -2; border-radius: 15px;">
+            <img src="./images/icon-play.svg" class="position-absolute" style="right: 15px; bottom: 10px; z-index: -1;"
+              alt="Work card">
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute container" style="bottom: 0px;">
+        <div class="row bg-card-text card-hover" style="border-radius: 15px;">
+          <div class="col">
+            <div class="container d-flex flex-row justify-content-between align-items-center">
+              <h5 id="" class="text-white pt-4 pb-2" style="font-size: 14px; font-weight: light;">Work</h2>
+                <img class="object-fit-contain icon-color" src="./images/icon-ellipsis.svg"
+                  alt="Three dots to drop down more options!">
             </div>
           </div>
           <div class="row">
@@ -80,48 +111,116 @@
       </div>
     </article>
 
-    <article id="" class="play-card position-relative">
-      
-    </article>
-
     <article class="study-card position-relative">
-      Study
-      0hrs <!-- daily -->
-      Previous - 1hr <!-- daily -->
-      4hrs <!-- weekly -->
-      Previous - 7hrs <!-- weekly -->
-      13hrs <!-- monthly -->
-      Previous - 19hrs <!-- monthly -->
+      <div class="container position-absolute">
+        <div class="row" style="height: 80px;">
+          <div class="col bg-study" style="z-index: -2; border-radius: 15px;">
+            <img src="./images/icon-study.svg" class="position-absolute" style="right: 15px; bottom: 5px; z-index: -1;"
+              alt="Work card">
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute container" style="bottom: 0px;">
+        <div class="row bg-card-text card-hover" style="border-radius: 15px;">
+          <div class="col">
+            <div class="container d-flex flex-row justify-content-between align-items-center">
+              <h5 id="" class="text-white pt-4 pb-2" style="font-size: 14px; font-weight: light;">Work</h2>
+                <img class="object-fit-contain icon-color" src="./images/icon-ellipsis.svg"
+                  alt="Three dots to drop down more options!">
+            </div>
+          </div>
+          <div class="row">
+            <h1 id="" style="font-size: 56px; font-weight: 1;" class="text-white ps-4 pb-1 pt-1">32hrs</h1>
+          </div>
+          <div class="row pb-3">
+            <p id="" class="text-custom-color ps-4">Last week - 36hrs</p>
+          </div>
+        </div>
+      </div>
     </article>
 
     <article class="exercise-card position-relative">
-      Exercise
-      1hr <!-- daily -->
-      Previous - 1hr <!-- daily -->
-      4hrs <!-- weekly -->
-      Previous - 5hrs <!-- weekly -->
-      11hrs <!-- monthly -->
-      Previous - 18hrs <!-- monthly -->
+      <div class="container position-absolute">
+        <div class="row" style="height: 80px;">
+          <div class="col bg-exercise" style="z-index: -2; border-radius: 15px;">
+            <img src="./images/icon-exercise.svg" class="position-absolute" style="right: 15px; bottom: 23px; z-index: -1;"
+              alt="Work card">
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute container" style="bottom: 0px;">
+        <div class="row bg-card-text card-hover" style="border-radius: 15px;">
+          <div class="col">
+            <div class="container d-flex flex-row justify-content-between align-items-center">
+              <h5 id="" class="text-white pt-4 pb-2" style="font-size: 14px; font-weight: light;">Work</h2>
+                <img class="object-fit-contain icon-color" src="./images/icon-ellipsis.svg"
+                  alt="Three dots to drop down more options!">
+            </div>
+          </div>
+          <div class="row">
+            <h1 id="" style="font-size: 56px; font-weight: 1;" class="text-white ps-4 pb-1 pt-1">32hrs</h1>
+          </div>
+          <div class="row pb-3">
+            <p id="" class="text-custom-color ps-4">Last week - 36hrs</p>
+          </div>
+        </div>
+      </div>
     </article>
 
     <article class="social-card position-relative">
-      Social
-      1hr <!-- daily -->
-      Previous - 3hrs <!-- daily -->
-      5hrs <!-- weekly -->
-      Previous - 10hrs <!-- weekly -->
-      21hrs <!-- monthly -->
-      Previous - 23hrs <!-- monthly -->
+      <div class="container position-absolute">
+        <div class="row" style="height: 80px;">
+          <div class="col bg-social" style="z-index: -2; border-radius: 15px;">
+            <img src="./images/icon-social.svg" class="position-absolute" style="right: 15px; bottom: -10px; z-index: -1;"
+              alt="Work card">
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute container" style="bottom: 0px;">
+        <div class="row bg-card-text card-hover" style="border-radius: 15px;">
+          <div class="col">
+            <div class="container d-flex flex-row justify-content-between align-items-center">
+              <h5 id="" class="text-white pt-4 pb-2" style="font-size: 14px; font-weight: light;">Work</h2>
+                <img class="object-fit-contain icon-color" src="./images/icon-ellipsis.svg"
+                  alt="Three dots to drop down more options!">
+            </div>
+          </div>
+          <div class="row">
+            <h1 id="" style="font-size: 56px; font-weight: 1;" class="text-white ps-4 pb-1 pt-1">32hrs</h1>
+          </div>
+          <div class="row pb-3">
+            <p id="" class="text-custom-color ps-4">Last week - 36hrs</p>
+          </div>
+        </div>
+      </div>
     </article>
 
     <article class="self-care-card position-relative">
-      Self Care
-      0hrs <!-- daily -->
-      Previous - 1hr <!-- daily -->
-      2hrs <!-- weekly -->
-      Previous - 2hrs <!-- weekly -->
-      7hrs <!-- monthly -->
-      Previous - 11hrs <!-- monthly -->
+      <div class="container position-absolute">
+        <div class="row" style="height: 80px;">
+          <div class="col bg-self-care" style="z-index: -2; border-radius: 15px;">
+            <img src="./images/icon-self-care.svg" class="position-absolute" style="right: 15px; bottom:18px; z-index: -1;"
+              alt="Self care icon">
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute container" style="bottom: 0px;">
+        <div class="row bg-card-text card-hover" style="border-radius: 15px;">
+          <div class="col">
+            <div class="container d-flex flex-row justify-content-between align-items-center">
+              <h5 id="" class="text-white pt-4 pb-2" style="font-size: 14px; font-weight: light;">Work</h2>
+                <img class="object-fit-contain icon-color" src="./images/icon-ellipsis.svg"
+                  alt="Three dots to drop down more options!">
+            </div>
+          </div>
+          <div class="row">
+            <h1 id="" style="font-size: 56px; font-weight: 1;" class="text-white ps-4 pb-1 pt-1">32hrs</h1>
+          </div>
+          <div class="row pb-3">
+            <p id="" class="text-custom-color ps-4">Last week - 36hrs</p>
+          </div>
+        </div>
+      </div>
     </article>
 
   </main>

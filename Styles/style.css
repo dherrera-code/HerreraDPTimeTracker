@@ -16,11 +16,12 @@ margin-bottom: 100px;
     grid-template-rows: repeat(2, 1fr);
     gap: 25px;
 }
-@media (max-width: 500px)
+@media (max-width: 800px)
 {
     .main-grid{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: 50% repeat(7, 30%);
+        gap: 30px;
     }
 }
 .main-card{
@@ -30,6 +31,9 @@ margin-bottom: 100px;
 .card-hover:hover{
     background-color:#33397A;
 }
+.nav-link{
+    color: #7078C9;
+}
 .nav-link:hover{
     color: white;
 }
@@ -38,9 +42,10 @@ margin-bottom: 100px;
     stroke: transparent;
     stroke-width: 2;
 }
+        /* Function Work In Progress! */
 .icon-color:hover{
-    fill: white !important;
-    
+    filter: brightness(150%);
+
 }
 /* For Main Card */
 .bg-custom{
@@ -56,4 +61,34 @@ margin-bottom: 100px;
     background-color: #FF8B64;
     border-radius: 15px;
 }
+.bg-play{
+    background-color: #55C2E6;
+    border-radius: 15px;
+}
+.bg-study{
+    background-color: #FF5E7D;
+    border-radius: 15px;
+}
+.bg-exercise{
+    background-color: #4BCF82;
+    border-radius: 15px;
+}
+.bg-social{
+    background-color: #7335D2;
+    border-radius: 15px;
+}
+.bg-self-care{
+    background-color: #F1C75B;
+    border-radius: 15px;
+}
 /* Custom card colors END */
+.current-hour-text{
+    font-size: 56px;
+}
+@media (max-width: 800px)
+{
+    .current-hour-text{
+        font-size: 32px;
+        padding-left: 22px;
+    }
+}
