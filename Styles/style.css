@@ -82,6 +82,10 @@ margin-bottom: 100px;
     border-radius: 15px;
 }
 /* Custom card colors END */
+.card-padding{
+    padding-bottom: 4rem;
+}
+
 .current-hour-text{
     font-size: 56px;
 }
@@ -89,6 +93,9 @@ margin-bottom: 100px;
 {
     .current-hour-text{
         font-size: 32px;
-        padding-left: 22px;
+        /* padding-left: 22px; */
     }
-}
+     .card-padding{
+        padding-bottom: 0;
+    }
+} 
