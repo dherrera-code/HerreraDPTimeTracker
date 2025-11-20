@@ -20,7 +20,7 @@ margin-bottom: 100px;
 {
     .main-grid{
         grid-template-columns: 1fr;
-        grid-template-rows: 50% repeat(7, 30%);
+        grid-template-rows: 50% repeat(7, 27%);
         gap: 30px;
     }
 }
@@ -30,6 +30,7 @@ margin-bottom: 100px;
 }
 .card-hover:hover{
     background-color:#33397A;
+
 }
 .nav-link{
     color: #7078C9;
@@ -46,6 +47,10 @@ margin-bottom: 100px;
 .icon-color:hover{
     filter: brightness(150%);
 
+}
+.card-hover:has(.icon-color:hover):hover{
+    background-color: #1C204B;
+    box-shadow: none;
 }
 /* For Main Card */
 .bg-custom{
@@ -83,7 +88,8 @@ margin-bottom: 100px;
 }
 /* Custom card colors END */
 .card-padding{
-    padding-bottom: 4rem;
+    padding-bottom: 8px;
+    padding-left: 8px;
 }
 
 .current-hour-text{
@@ -96,6 +102,7 @@ margin-bottom: 100px;
         /* padding-left: 22px; */
     }
      .card-padding{
-        padding-bottom: 0;
+        padding-left: 24px;
+        padding-bottom: 0px;
     }
 } 
