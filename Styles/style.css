@@ -4,28 +4,32 @@ body{
 
     color: #BBC0FF;
 }
+/* Change width spacing of entire grid */
 .container-spacing{
 max-width: 85% !important;
 margin-top: 100px;
 margin-bottom: 100px;
 }
+/* Creates a white border for Jeremy Robson's image */
 .img-border{
-    width: 84px;
-    height: 84px;
+    width: 82px;
+    height: 82px;
     border-radius: 50%;
     border: 4px solid #ffffff;
 }
+/* resizes Jeremy's image */
 .img-border img{
-    width: 78px !important;
-    height: 78px !important;
+    width: 78px;
+    height: 78px;
 }
 /* Main Card Start*/
 .main-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%);
     gap: 25px;
 }
+/* Makes first card take the first column */
 .main-card{
     grid-row-start: 1;
     grid-row-end: 3;
@@ -37,7 +41,7 @@ margin-bottom: 100px;
 {
     .main-grid{
         grid-template-columns: 1fr;
-        grid-template-rows: 50% repeat(7, 40%);
+        grid-template-rows: 40% repeat(7, 30%) 5rem;
         gap: 30px;
     }
     .main-card
@@ -48,51 +52,52 @@ margin-bottom: 100px;
         font-size: 24px;
     }
     .img-border{
-        width: 70px;
-        height: 70px;
+        width: 68px;
+        height: 68px;
     }
     .img-border img{
-        width: 64px !important;
-        height: 64px !important;
-    }
+        width: 64px;
+        height: 64px;
+    }  
+    
 }
+/* Function to add hover towards cards */
 .card-hover:hover{
     background-color:#33397A;
 
 }
+/* This is the default color for daily, weekly, and monthly */
 .nav-link{
     color: #7078C9;
 }
+/* Active class created to keep active button highlighted: used JS to manipulate what btn is active */
 .active{
     color:white;
 }
+/* Adds hover effect for daily, weekly and monthly buttons */
 .nav-link:hover{
     color: white;
 }
-.icon-color{
-    fill: transparent;
-    stroke: transparent;
-    stroke-width: 2;
-}
-        /* Function Work In Progress! */
+/* Function adds a hover effect when hovering over the ellipsis! */
 .icon-color:hover{
     filter: brightness(150%);
 
 }
+/* Function to turn off hover for card and turn on hover for ellipsis */
 .card-hover:has(.icon-color:hover):hover{
     background-color: #1C204B;
     box-shadow: none;
 }
-/* For Main Card */
-.bg-custom{
-    background-color: #5747EA;
-    border-radius: 15px;
-}
+/* This class is to give background for all card body content */
 .bg-card-text {
     background-color: #1C204B;
     border-radius: 15px;
 }
 /* classes for all custom card colors START */
+.bg-custom{
+    background-color: #5747EA;
+    border-radius: 15px;
+}
 .bg-work{
     background-color: #FF8B64;
     border-radius: 15px;
@@ -118,6 +123,8 @@ margin-bottom: 100px;
     border-radius: 15px;
 }
 /* Custom card colors END */
+/*  */
+/* Custom padding for current time! */
 .card-padding{
     padding-bottom: 8px;
     padding-left: 8px;
@@ -134,7 +141,6 @@ margin-bottom: 100px;
 {
     .current-hour-text{
         font-size: 32px;
-        /* padding-left: 22px; */
     }
      .card-padding{
         padding-left: 24px;
