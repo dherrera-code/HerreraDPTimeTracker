@@ -7,10 +7,9 @@ Time Tracker:
 
 //In this project, I recreated the attached prototype and used Javascript to add functionality to the webpage!
 
-Notes: Adjusted logo cards padding to match the original figma!
-    In Progress: 
-    Fix mobile port to scroll a little pass the last card
-    review mobile port
+Notes after peer review: Adjusted logo cards padding to match the original figma!
+Fixed mobile port to scroll a little pass the last card
+review mobile port
 
 Peer Review () :  
 Pallavi pattanashetti

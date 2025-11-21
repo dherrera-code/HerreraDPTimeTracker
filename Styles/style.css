@@ -45,7 +45,7 @@ margin-bottom: 100px;
 {
     .main-grid{
         grid-template-columns: 1fr;
-        grid-template-rows: 40% repeat(7, 30%) 5rem;
+        grid-template-rows: 40% repeat(6, 30%) 6rem;
         gap: 24px;
     }
     .main-card
@@ -68,7 +68,7 @@ margin-bottom: 100px;
     font-size: 14px;
     }
     .spacing-margin{
-        margin-bottom: -12px;
+        margin-bottom: -15px;
     }
     .customCardTopPadding{
         margin-bottom: 10px;
