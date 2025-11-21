@@ -18,17 +18,14 @@ let selfCarePreviousHours = document.getElementById("self-care-previous-hours");
 let dailyBtn = document.getElementById("daily-btn");
 let weeklyBtn = document.getElementById("weekly-btn");
 let monthlyBtn = document.getElementById("monthly-btn");
-let dailyBtnActive = false;
+let dailyBtnActive = true;
 let weeklyBtnActive = false;
 let monthlyBtnActive = false;
 
 
 fetch('./data.json').then(response => {
-    // console.log("Raw response object from our fetch")
     return response.json()
 }).then(data => {
-    // console.log("Parsed json data: ", data)
-    console.log(data)
 
     workCurrentHours.innerText = data[0].timeframes.daily.current + "hrs";
     workPreviousHours.innerText ="Yesterday - " + data[0].timeframes.daily.previous + "hrs";
@@ -48,22 +45,35 @@ fetch('./data.json').then(response => {
     selfCareCurrentHours.innerText = data[5].timeframes.daily.current + "hrs";
     selfCarePreviousHours.innerText ="Yesterday - " + data[5].timeframes.daily.previous + "hrs";
     
-    if(dailyBtnActive)
+    
+    // let list = document.getElementsByTagName("button");
+    // for(let i = 0; i < list.length; i++)
+    // {
+    //     list[i].addEventListener("click", function() {
+    //         let active = document.getElementsByClassName("active");
+    //         active[0].className = current[0].className.replace("active", "");
+    //         this.className += "active";
+    //     });
+    // }
+    console.log(dailyBtnActive)
+    if(!dailyBtnActive)
     {
-        dailyBtn.classList.active("nav-link-highlighted");
-        
+        dailyBtn.classList.remove('active');
     }
-    else if (!dailyBtnActive) {
-        dailyBtn.classList.toggle("nav-link-highlighted");
+    else
+    {
+        dailyBtn.classList.add('active');
     }
 
     // Add function to disable daily btn and keep highlighted
     dailyBtn.addEventListener("click", function(){
 
 
-        dailyBtnActive = false;
-        weeklyBtnActive = true;
+        dailyBtnActive = true;
+        weeklyBtnActive = false;
         monthlyBtnActive =false;
+
+        console.log(dailyBtnActive);
 
         workCurrentHours.innerText = data[0].timeframes.daily.current + "hrs";
         workPreviousHours.innerText ="Yesterday - " + data[0].timeframes.daily.previous + "hrs";
@@ -82,10 +92,26 @@ fetch('./data.json').then(response => {
     
         selfCareCurrentHours.innerText = data[5].timeframes.daily.current + "hrs";
         selfCarePreviousHours.innerText ="Yesterday - " + data[5].timeframes.daily.previous + "hrs";
+        console.log(dailyBtnActive)
+    if(!dailyBtnActive)
+        dailyBtn.classList.remove('active');
+    else
+        dailyBtn.classList.add('active');
+    if(!weeklyBtnActive)
+        weeklyBtn.classList.remove('active');
+    else    
+        weeklyBtn.classList.add('active');
+    if(!monthlyBtnActive)
+        monthlyBtn.classList.remove('active')
+    else
+        monthlyBtn.classList.add('active')
     });
     console.log(data[0].timeframes.weekly.previous + "hrs")
     weeklyBtn.addEventListener("click", function(){
         
+        dailyBtnActive = false;
+        weeklyBtnActive = true;
+        monthlyBtnActive =false;
         // weeklyBtn.style.color = "white";
         // dailyBtn.style.color = "#7078C9";
         // monthlyBtn.style.color = "#7078C9";
@@ -107,8 +133,29 @@ fetch('./data.json').then(response => {
     
         selfCareCurrentHours.innerText = data[5].timeframes.weekly.current + "hrs";
         selfCarePreviousHours.innerText ="Last Week - " + data[5].timeframes.weekly.previous + "hrs";
+        console.log(dailyBtnActive)
+    if(!dailyBtnActive)
+    {
+        dailyBtn.classList.remove('active');
+    }
+    else
+    {
+        dailyBtn.classList.add('active');
+    }
+    if(!weeklyBtnActive)
+        weeklyBtn.classList.remove('active');
+    else    
+        weeklyBtn.classList.add('active');
+    if(!monthlyBtnActive)
+        monthlyBtn.classList.remove('active')
+    else
+        monthlyBtn.classList.add('active')
     });
     monthlyBtn.addEventListener("click", function(){
+
+        dailyBtnActive = false;
+        weeklyBtnActive = false;
+        monthlyBtnActive =true;
         // dailyBtn.style.color = "#7078C9";
         // weeklyBtn.style.color = "#7078C9";
         // monthlyBtn.style.color = "white"
@@ -129,7 +176,25 @@ fetch('./data.json').then(response => {
     
         selfCareCurrentHours.innerText = data[5].timeframes.monthly.current + "hrs";
         selfCarePreviousHours.innerText ="Last Month - " + data[5].timeframes.monthly.previous + "hrs";
-    })
+
+        console.log(dailyBtnActive)
+    if(!dailyBtnActive)
+    {
+        dailyBtn.classList.remove('active');
+    }
+    else
+    {
+        dailyBtn.classList.add('active');
+    }
+    if(!weeklyBtnActive)
+        weeklyBtn.classList.remove('active');
+    else    
+        weeklyBtn.classList.add('active');
+    if(!monthlyBtnActive)
+        monthlyBtn.classList.remove('active')
+    else
+        monthlyBtn.classList.add('active')
+    });  
 });
 //creating eventListeners for a tags to toggle daily, weekly, and monthly. (if button pressed, disable btn and keep highlighted).
 
