@@ -38,8 +38,8 @@ margin-bottom: 100px;
 .student-name{
     font-size: 40px;
 }
-.title-size{
-    font-size: 18px;
+.previousHourText{
+    font-size: 15px;
 }
 @media (max-width: 800px)
 {
@@ -66,7 +66,13 @@ margin-bottom: 100px;
     }  
     .title-size{
     font-size: 14px;
-}
+    }
+    .spacing-margin{
+        margin-bottom: -12px;
+    }
+    .customCardTopPadding{
+        margin-bottom: 10px;
+    }
 }
 /* Function to add hover towards cards */
 .card-hover:hover{
