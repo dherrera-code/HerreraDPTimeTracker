@@ -8,8 +8,9 @@ Time Tracker:
 //In this project, I recreated the attached prototype and used Javascript to add functionality to the webpage!
 
 Peer Review () :  
+Pallavi pattanashetti
 
-
+Great work! The page is responsive and functions very nicely. I have one suggestion: the logo cards could use a bit more padding to match the original design. Other than that, excellent job!
 
 
 
