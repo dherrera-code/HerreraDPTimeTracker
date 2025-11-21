@@ -1,7 +1,9 @@
 # Daniel Herrera
 
-Date Revised: 11/20/2025
-    //today I will update the responsiveness and make my website functional and pull data.
+Date Revised: 11/21/2025
+    11/20/2025 I will update the responsiveness and make my website functional and pull data. (Created JS functionality)
+
+    11/21/2025: I've updated the styling of my build to match the figma prototype as best as I can! (mobile too!)
 
 Time Tracker:  
 
