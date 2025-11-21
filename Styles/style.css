@@ -46,7 +46,7 @@ margin-bottom: 100px;
     .main-grid{
         grid-template-columns: 1fr;
         grid-template-rows: 40% repeat(7, 30%) 5rem;
-        gap: 30px;
+        gap: 24px;
     }
     .main-card
     {
