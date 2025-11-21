@@ -18,6 +18,10 @@ let selfCarePreviousHours = document.getElementById("self-care-previous-hours");
 let dailyBtn = document.getElementById("daily-btn");
 let weeklyBtn = document.getElementById("weekly-btn");
 let monthlyBtn = document.getElementById("monthly-btn");
+let dailyBtnActive = false;
+let weeklyBtnActive = false;
+let monthlyBtnActive = false;
+
 
 fetch('./data.json').then(response => {
     // console.log("Raw response object from our fetch")
@@ -43,9 +47,24 @@ fetch('./data.json').then(response => {
 
     selfCareCurrentHours.innerText = data[5].timeframes.daily.current + "hrs";
     selfCarePreviousHours.innerText ="Yesterday - " + data[5].timeframes.daily.previous + "hrs";
+    
+    if(dailyBtnActive)
+    {
+        dailyBtn.classList.active("nav-link-highlighted");
+        
+    }
+    else if (!dailyBtnActive) {
+        dailyBtn.classList.toggle("nav-link-highlighted");
+    }
 
     // Add function to disable daily btn and keep highlighted
     dailyBtn.addEventListener("click", function(){
+
+
+        dailyBtnActive = false;
+        weeklyBtnActive = true;
+        monthlyBtnActive =false;
+
         workCurrentHours.innerText = data[0].timeframes.daily.current + "hrs";
         workPreviousHours.innerText ="Yesterday - " + data[0].timeframes.daily.previous + "hrs";
     
@@ -66,6 +85,11 @@ fetch('./data.json').then(response => {
     });
     console.log(data[0].timeframes.weekly.previous + "hrs")
     weeklyBtn.addEventListener("click", function(){
+        
+        // weeklyBtn.style.color = "white";
+        // dailyBtn.style.color = "#7078C9";
+        // monthlyBtn.style.color = "#7078C9";
+        // dailyBtn.document.style.setProperty("--nav-link-hover" , "white")
         workCurrentHours.innerText = data[0].timeframes.weekly.current + "hrs";
         workPreviousHours.innerText ="Last Week - " + data[0].timeframes.weekly.previous + "hrs";
 
@@ -85,6 +109,9 @@ fetch('./data.json').then(response => {
         selfCarePreviousHours.innerText ="Last Week - " + data[5].timeframes.weekly.previous + "hrs";
     });
     monthlyBtn.addEventListener("click", function(){
+        // dailyBtn.style.color = "#7078C9";
+        // weeklyBtn.style.color = "#7078C9";
+        // monthlyBtn.style.color = "white"
         workCurrentHours.innerText = data[0].timeframes.monthly.current + "hrs";
         workPreviousHours.innerText ="Last Month - " + data[0].timeframes.monthly.previous + "hrs";
 

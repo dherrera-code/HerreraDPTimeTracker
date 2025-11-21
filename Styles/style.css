@@ -60,10 +60,16 @@ margin-bottom: 100px;
     background-color:#33397A;
 
 }
-.nav-link{
+.nav-link-default{
     color: #7078C9;
 }
-.nav-link:hover{
+.nav-link-default:hover{
+    color: white;
+}
+.nav-link-highlighted{
+    color:white;
+}
+.nav-link-highlighted:hover{
     color: white;
 }
 .icon-color{
