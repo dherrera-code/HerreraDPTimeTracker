@@ -25,17 +25,21 @@ margin-bottom: 100px;
 /* Main Card Start*/
 .main-grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 50%);
-    gap: 25px;
+    grid-template-columns: repeat(4, 255px);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
 }
 /* Makes first card take the first column */
 .main-card{
     grid-row-start: 1;
     grid-row-end: 3;
+    height: 518px;
 }
 .student-name{
     font-size: 40px;
+}
+.title-size{
+    font-size: 18px;
 }
 @media (max-width: 800px)
 {
@@ -47,6 +51,7 @@ margin-bottom: 100px;
     .main-card
     {
         grid-row-end: 2;
+        height: auto;
     }
     .student-name{
         font-size: 24px;
@@ -59,7 +64,9 @@ margin-bottom: 100px;
         width: 64px;
         height: 64px;
     }  
-    
+    .title-size{
+    font-size: 14px;
+}
 }
 /* Function to add hover towards cards */
 .card-hover:hover{
